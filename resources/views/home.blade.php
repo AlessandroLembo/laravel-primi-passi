@@ -13,7 +13,7 @@
 
 <body>
     <div class="container text-center">
-        <h1 class="text-success mt-5"> {{$hello}} </h1>
+        <h1 class="text-success mt-5"> {{$greet}} </h1>
         
     </div>
     

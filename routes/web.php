@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $greet = 'Hello World';
 
-    return view('home', ['hello' => $greet]);
+    // return view('home', ['hello' => $greet]);
+    return view('home', compact('greet'));
 });
