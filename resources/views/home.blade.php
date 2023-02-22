@@ -12,7 +12,11 @@
 </head>
 
 <body>
-    <h1 class="text-center text-success mt-5">Hello World</h1>
+    <div class="container text-center">
+        <h1 class="text-success mt-5"> {{$hello}} </h1>
+        
+    </div>
+    
 </body>
 
 </html>
