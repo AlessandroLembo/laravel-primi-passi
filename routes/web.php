@@ -13,9 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     $greet = 'Hello World';
+    $cities = ['Londra', 'Parigi', 'Berlino'];
 
-    // return view('home', ['hello' => $greet]);
-    return view('home', compact('greet'));
-});
+    return view('home', compact('greet', 'cities'));
+})->name('home');
+
+
+Route::get('/city/{index}', function ($index) {
+    $cities = ['Londra', ' Parigi', 'Berlino'];
+
+    $city = $cities[$index];
+    return view('city', compact('city'));
+})->name('city');

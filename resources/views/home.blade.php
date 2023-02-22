@@ -14,6 +14,13 @@
 <body>
     <div class="container text-center">
         <h1 class="text-success mt-5"> {{$greet}} </h1>
+        <nav>
+            <ul class="d-flex justify-content-around mt-4">
+                @foreach($cities as $city)
+                <li class="list-unstyled fs-2"><a href=" {{route('city', ['index' => $loop->index]) }} ">{{$city}}</a></li>
+                @endforeach
+            </ul>
+        </nav>
         
     </div>
     
